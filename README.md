@@ -22,14 +22,12 @@ Instalacion:
 
 Se puede probar por Postman 
 
-+--------+-----------+------------------+---------------+---------------------------------------------+------------+
-| Domain | Method    | URI              | Name          | Action                                      | Middleware |
-+--------+-----------+------------------+---------------+---------------------------------------------+------------+
-|        | GET|HEAD  | /                |               | Closure                                     | web        |
-|        | GET|HEAD  | api/users        | users.index   | App\Http\Controllers\UserController@index   | api        |
-|        | POST      | api/users        | users.store   | App\Http\Controllers\UserController@store   | api        |
-|        | GET|HEAD  | api/users/{user} | users.show    | App\Http\Controllers\UserController@show    | api        |
-|        | PUT|PATCH | api/users/{user} | users.update  | App\Http\Controllers\UserController@update  | api        |
-|        | DELETE    | api/users/{user} | users.destroy | App\Http\Controllers\UserController@destroy | api        |
-+--------+-----------+------------------+---------------+---------------------------------------------+------------+
+
+GET|HEAD  | /                |               | Closure                                     | web        |
+GET|HEAD  | api/users        | users.index   | App\Http\Controllers\UserController@index   | api        |
+POST      | api/users        | users.store   | App\Http\Controllers\UserController@store   | api        |
+GET|HEAD  | api/users/{user} | users.show    | App\Http\Controllers\UserController@show    | api        |
+PUT|PATCH | api/users/{user} | users.update  | App\Http\Controllers\UserController@update  | api        |
+DELETE    | api/users/{user} | users.destroy | App\Http\Controllers\UserController@destroy | api        |
+
 
