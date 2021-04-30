@@ -13,7 +13,7 @@ class UsersTableSeeder extends Seeder
     {
         $arrays = range(0,20);
         foreach ($arrays as $valor) {
-	        DB::table('datos_personales')->insert([	            
+	        DB::table('users')->insert([	            
 	             'nombre' => Str::random(10),
 	             'apellido' => Str::random(10),
 	             'email' => Str::random(10),
