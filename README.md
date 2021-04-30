@@ -1,6 +1,6 @@
 Api RESTful
 
-Instalacion:
+Instalación:
 
 - composer install
 
@@ -9,14 +9,19 @@ Instalacion:
 - php artisan key:generate
 
   Se tiene que configurar la base de datos local, usuario, contraseña y nombre de la db.
-	DB_HOST=localhost
+
+	DB_HOST=localhost 
+
 	DB_DATABASE=tu_base_de_datos
+
 	DB_USERNAME=root
+
 	DB_PASSWORD=tu_contraseña
+
 
 - composer dump-autoload
 
-- php artisan migrate --seed  (va a generar la tabla y 10 registros)
+- php artisan migrate --seed  (va a generar la tabla User y 10 registros)
 
 ---------------------------------------------
 
