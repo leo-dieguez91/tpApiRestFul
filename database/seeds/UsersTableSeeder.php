@@ -11,14 +11,6 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        $arrays = range(0,20);
-        foreach ($arrays as $valor) {
-	        DB::table('users')->insert([	            
-	             'nombre' => Str::random(10),
-	             'apellido' => Str::random(10),
-	             'email' => Str::random(10),
-	             'usuario' => Str::random(10),
-	        ]);
-        }
+		factory(User::class, 10)->create();
     }
 }
